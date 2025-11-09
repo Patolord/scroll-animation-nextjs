@@ -262,17 +262,22 @@ export default function HeroSection() {
 
       <div
         ref={heroImgRef}
-        className="hero-img absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] will-change-[transform,opacity]"
-        style={{ transformStyle: "preserve-3d" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2"
+        style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
       >
-        <Image
-          src="/dashboard.png"
-          alt="Dashboard"
-          width={1200}
-          height={800}
-          className="w-full h-auto"
-          priority
-        />
+        <div
+          className="relative w-full h-full opacity-0 will-change-[transform,opacity]"
+          style={{ transform: "translateZ(1000px)" }}
+        >
+          <Image
+            src="/dashboard.png"
+            alt="Dashboard"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+            priority
+          />
+        </div>
       </div>
     </section>
   );
