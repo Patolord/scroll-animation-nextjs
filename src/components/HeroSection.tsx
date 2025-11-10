@@ -70,7 +70,7 @@ export default function HeroSection() {
             ref={headerRef}
             className="absolute top-1/2 left-1/2 flex w-screen origin-center -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 text-center text-foreground will-change-[transform,opacity]"
           >
-            <h1 className="font-host-grotesk mb-2 w-[50%] text-5xl leading-[1.1] font-normal">
+            <h1 className="font-host-grotesk mb-2 w-[50%] text-5xl leading-[1.1] font-normal lg:w-[calc(100%-4rem)]">
               The future of education is here. Join the Teacher Gamer Revolution
               and revolutionize the way you learn.
             </h1>
