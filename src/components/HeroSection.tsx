@@ -60,7 +60,7 @@ export default function HeroSection() {
           </Button>
         </div>
       </nav>
-      <section className="relative w-screen h-svw overflow-hidden">
+      <section className="relative w-screen h-svh overflow-hidden">
         <canvas ref={canvasRef} className="object-cover w-full h-full" />
 
         {/* hero content */}
